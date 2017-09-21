@@ -18,6 +18,8 @@ class CreateTablePersonas extends Migration
             $table->string('nombre', 50);
             $table->string('apellido', 50);
             $table->integer('dni');
+            $table->string('domicilio', 100)->nullable();
+            $table->date('fecha_nacimiento')->nullable();
             $table->timestamps();
         });
     }

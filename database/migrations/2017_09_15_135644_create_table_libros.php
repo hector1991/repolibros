@@ -15,16 +15,15 @@ class CreateTableLibros extends Migration
     {
         Schema::create('libros', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('titulo', 50);
-            $table->string('autor', 50);
-            $table->string('editorial', 50);
+            $table->string('titulo', 100);
+            $table->string('editorial', 100);
+            $table->string('autor', 100);
+            $table->date('fecha_edicion')->nullable();
+            $table->string('tipo_tapa', 10);
             $table->string('genero', 50);
-            $table->date('fecha_edicion');
             $table->float('precio', 4, 2);
-            $table->string('isbn');
-            $table->integer('id_proveedor')->unsigned();
-            $table->foreign('id_proveedor')->references('id')->on('proveedores');
-
+            $table->integer('proveedor_id')->unsigned();
+            $table->foreign('proveedor_id')->references('id')->on('proveedores');
             $table->timestamps();
         });
     }

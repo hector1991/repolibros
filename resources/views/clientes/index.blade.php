@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head class="badge badge-dark">
-	<title>LISTA CLIENTES</title>
+	<title>LISTA DE CLIENTES</title>
      <div class="mx-sm-5">
-	<H1 class="table table-bordered table-inverse">LISTA CLIENTES</H1>
+	<H1 class="table table-bordered table-inverse">LISTA DE CLIENTES</H1>
      </div>
 </head>
 <body>
@@ -35,7 +35,7 @@
      <td>{{ $cliente->activo }}</td>
      <td><a href="clientes/{{ $cliente->id }}" class="btn btn-danger">Eliminar</a></td>
      <td><a href="clientes/{{ $cliente->id }}/edit" class="btn btn-success">Editar</a></td>
-     <i><span class="glyphicon glyphicon-trash"></span></i>
+     
 
     
 

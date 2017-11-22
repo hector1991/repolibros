@@ -5,7 +5,9 @@
 <html>
 <head>
      <title>LISTA DE PROVEEDORES</title>
-     <H1>LISTA DE PROVEEDORES</H1>
+     <div class="mx-sm-5">
+     <H1  class="table table-bordered table-inverse">LISTA DE PROVEEDORES</H1>
+     </div>
 </head>
 <body >
 <div class="mx-sm-5">

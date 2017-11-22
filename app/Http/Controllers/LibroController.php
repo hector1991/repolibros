@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Model\Libros;
 use App\Model\Proveedores;
+use App\Model\Stock;
 
 class LibroController extends Controller
 
@@ -60,9 +61,12 @@ public function store(Request $request)
         $libro->precio = $precio;
         $libro->proveedor_id = $proveedorid;
         $libro->save();
-
-
-
+        
+        //crear stock
+        $stock = new Stock();
+        $stock->libro_id = $libro->id;
+        $stock->save();
+        
         $mensaje = "LIBRO AGREGADO CORRECTAMENTE";
         return redirect("libros/create")->with("mensaje", $mensaje);
 

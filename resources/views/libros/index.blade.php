@@ -12,7 +12,7 @@
 <body>
 {{ session("mensaje") }}
 
-<br>
+
 <div class="mx-sm-5">
 <table class="table table-bordered table-inverse">
 <tr>

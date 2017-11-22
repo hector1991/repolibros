@@ -19,11 +19,16 @@
 <body>
 
 <div align="center">
-    <div class="alert alert-success">
-	    <div align="left" class="badge badge-dark mx-sm-5 text-white " ><a class="text-white mx-sm-5 " href="/libros/public/clientes">Clientes</a></div>
-	    <div align="center" class="badge badge-dark mx-sm-5"><a class="text-white mx-sm-5" href="/libros/public/proveedores">Proveedores</a></div>
+    <div class="alert alert-primary">
+	    <div align="left" class="badge badge-dark mx-sm-5 text-white " ><a class="text-white mx-sm-5 " href="/libros/public/clientes">Clientes</a>
+	    </div>
+	    <div align="center" class="badge badge-dark mx-sm-5"><a class="text-white mx-sm-5" href="/libros/public/proveedores">Proveedores</a>
+	    </div>
 	    <div align="right" class="badge badge-dark mx-sm-5"><a class="text-white mx-sm-5" href="/libros/public/libros">Libros</a></div>
-    
+        <div align="right" class="badge badge-dark mx-sm-5"><a class="text-white mx-sm-5" href="/libros/public/stock">Stock</a>
+        </div>
+         <div align="right" class="badge badge-dark mx-sm-5"><a class="text-white mx-sm-5" href="/libros/public/facturas">Facturas</a>
+        </div>
 </div>
     <br>
     <br>
